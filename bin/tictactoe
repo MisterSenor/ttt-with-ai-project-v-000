@@ -24,7 +24,6 @@ game.play until game.won? || game.draw? || game.over?
     game.play until ntil game.won? || game.draw? || game.over?
     puts "Would you like to play again?"
     end
-  end
 
 
 
