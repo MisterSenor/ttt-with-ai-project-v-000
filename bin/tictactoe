@@ -20,11 +20,9 @@ if game.draw?
   input = gets.strip
   if input == "Y" || input == "y"
     game = Game.new
-    until game.won? || game.over? 
-      game.play
+    game.board.display
     end
   end
-end 
 
 
 
