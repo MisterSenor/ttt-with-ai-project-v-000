@@ -24,6 +24,7 @@ if game.draw?
       game.play
     end
   end
+end 
 
 
 
