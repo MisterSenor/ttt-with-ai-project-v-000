@@ -22,6 +22,7 @@ if game.won? || game.draw? || game.over?
   if input == "Y" || input == "y"
     game = Game.new
     game.board.display
+    game.play
     end
   end
 
