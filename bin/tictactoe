@@ -16,7 +16,7 @@ puts "\n"
 game = Game.new
 game.board.display
 game.play
-if game.draw?
+if game.won? || game.draw? || game.over?
   puts "Would you like to play again?"
   input = gets.strip
   if input == "Y" || input == "y"
