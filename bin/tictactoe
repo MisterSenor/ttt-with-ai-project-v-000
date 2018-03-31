@@ -15,6 +15,7 @@ puts "Welcome to Tic Tac Toe!"
 puts "\n"
 game = Game.new
 game.board.display
+game.play
 # if game.draw?
 #   puts "Would you like to play again?"
 #   input = gets.strip
