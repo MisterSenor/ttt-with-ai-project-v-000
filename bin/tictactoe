@@ -15,14 +15,14 @@ puts "Welcome to Tic Tac Toe!"
 puts "\n"
 game = Game.new
 game.board.display
-game.play
-if game.won? || game.draw? || game.over?
+game.play until game.won? || game.draw? || game.over?
   puts "Would you like to play again?"
   input = gets.strip
-  if input == "Y" || input == "y"
+  until input != "Y" || input != "y"
     game = Game.new
     game.board.display
-    game.play
+    game.play until ntil game.won? || game.draw? || game.over?
+    puts "Would you like to play again?"
     end
   end
 
