@@ -5,6 +5,7 @@ module Players
 
     def move(input)
       input = gets.chomp
+      #need to validate input somehow
     end
 
   end

@@ -63,13 +63,15 @@ class Game
   end
 
   def turn
+  puts "Pick a number from 1-9."
   player = current_player
-  potential_move = player.move(@board)
+  potential_move = player.move(@board) #how can the board be the input here?
     if !@board.valid_move?(potential_move)
       turn
     elsif @board.valid_move?(potential_move)
      @board.update(potential_move, player)
     end
+    @board.display
   end
 
   def play
@@ -81,7 +83,7 @@ class Game
     end
     if draw?
       puts "Cat's Game!"
-    end 
+    end
   end
 
 
